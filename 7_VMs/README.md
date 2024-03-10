@@ -24,10 +24,12 @@ Google Compute Engine is a virtual machine (VM) service that allows users to cre
 ![image](https://github.com/begh-azka/google-cloud-learning/assets/97597065/2699f457-026d-47ab-9abd-384876e55d4e)
 
 ### Machine Configuration
+Options available are:
 - General Purpose
 - Compute Optimized
 - Memory Optimised
-- GPUs
+- GPUs (Graphic Processor Units)
+- Storage Optimized
 
 ### Machine Type
 - Machine type can be **Preset** or **Custom** (where you can set no of vCPU and Memory)
@@ -40,7 +42,7 @@ VM Provisioning Models are of two types:
 
 ### Boot Disk
 - Here you can select what kind of machine image you want: **public** or **custom**.
-- Snapshots, Archive Snapshots and Existing Disks are some of the other options avaialble.
+- Snapshots, Archive Snapshots and Existing Disks are some of the other options available.
 - In public image, you can select the **Operating System** of your VM, its version, its disk size and boot disk type.
 
 ### Access Scopes
