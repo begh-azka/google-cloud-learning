@@ -1,6 +1,7 @@
 # GCP Pricing
 
 - Google Cloud Platform was the first public public Cloud Service which provides **per second billing**.
+- We need to associate our account with a **Billing Account**. **To do that, we need to be either owner of the project or Project Billing Administrator.**
 - **Customer Friendly Pricing:**
   - No upfront Costs
   - Pay as you Go
