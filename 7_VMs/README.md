@@ -48,11 +48,12 @@ VM Provisioning Models are of two types:
 
 ## Create VMs
 1. Through Console
-2. Via Google Shell
+2. Via Google sdk or shell
 3. Terraform
 4. REST API Calls
 
-### Commands to use in google shell
+### Commands using Cloud SDK
+Once Cloud SDK is installed on your system, you will be able
 ```
 gcloud compute instances create instance-20240310-105520 --zone=us-central1-a --machine-type=e2-micro 
 ```
