@@ -46,5 +46,16 @@ VM Provisioning Models are of two types:
 ### Observability - Ops Agent
 - To collect more metrics, ops agent can be installed on our VMs.
 
+## Create VMs
+1. Through Console
+2. Via Google Shell
+3. Terraform
+4. REST API Calls
+
+### Commands to use in google shell
+```
+gcloud compute instances create instance-20240310-105520 --zone=us-central1-a --machine-type=e2-micro 
+```
+We can also checkout the equivalent code section in Google Cloud. It gives us commands that we can run as well as Terraform code and REST API calls
 
 
