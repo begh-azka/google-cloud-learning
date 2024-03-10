@@ -1,5 +1,5 @@
 # GCP Pricing
-
+[Billing Roles](https://cloud.google.com/billing/docs/how-to/billing-access)
 - Google Cloud Platform was the first public public Cloud Service which provides **per second billing**.
   
 - We need to associate our account with a **Billing Account**. **To do that, we need to be either Owner of the Project or Project Billing Manager.** To create a billing account, we need to be **billing account creator**.
