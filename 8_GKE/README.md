@@ -14,3 +14,11 @@
 ## Kubernetes Architecture
 ![image](https://github.com/begh-azka/google-cloud-learning/assets/97597065/eb63b3a6-e14e-47ab-9a6d-78678d5e2827)
 
+## Create a Cluster
+```sh
+gcloud container clusters create clustername \
+--machine-type n1-standard-2 \
+--num-nodes 2\
+--zone zone-name\
+--cluster-version latest \
+```
