@@ -63,8 +63,17 @@ VM Provisioning Models are of two types:
 ### Commands using Cloud SDK
 Once Cloud SDK is installed on your system, you will be able
 ```
-gcloud compute instances create instance-20240310-105520 --zone=us-central1-a --machine-type=e2-micro 
+gcloud compute instances create instance-name --zone=us-central1-a --machine-type=e2-micro 
 ```
 We can also checkout the equivalent code section in Google Cloud. It gives us commands that we can run as well as Terraform code and REST API calls
 
+### Advanced Configuration
+- VMs can be attached with an addition boot disk. This can be done in Advanced Options of google console while creating a VM.
+- We can also attach a snapshot of another VM's disk to a new VM.
+- Boot Disk that can be attached can be **blank** or an **image** or **archive snapshot** or just a **snapshot**.
+- **Disk Type can be Balanced Persistent Disk, Extreme Persistent Disk, SSD Persistent Disk and Standard Persistent Disk.**
+- **Standard has fewest read and write IOPS per second and Extreme/SSD has the most and Balanced is in the middle.**
+- VMs can be put in a custom VPC and a subnet of your choice. **This is done in Advanced Options -> Networking -> Network Interfaces.**
+- We can add labels (tags) to our VMs and Disks.
+- We can specify if we want to keep the disk or delete it (default) after we delete a VM in advanced options.
 
