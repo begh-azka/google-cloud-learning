@@ -23,6 +23,12 @@ Google Compute Engine is a virtual machine (VM) service that allows users to cre
 - There are storage and memory optimised machines as well.
 ![image](https://github.com/begh-azka/google-cloud-learning/assets/97597065/2699f457-026d-47ab-9abd-384876e55d4e)
 
+### Machine Configuration
+- General Purpose
+- Compute Optimized
+- Memory Optimised
+- GPUs
+
 ### Machine Type
 - Machine type can be **Preset** or **Custom** (where you can set no of vCPU and Memory)
 - In preset, you have **Shared Core**, **High CPU**, **High Memory** and **Standard** options.
