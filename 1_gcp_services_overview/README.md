@@ -62,4 +62,4 @@
    
 ******************************************************************* **Important** ***********************************************************
 - Before we can use a service, we need to enable the **Google Cloud APIs** of those services.
-- To do that, either go to a service that you haven't enabled, it will prompt you to enable it or go to API and Services console in GCP.
+- To do that, either go to a service that you haven't enabled, it will prompt you to enable it or go to **API and Services** console in GCP.
