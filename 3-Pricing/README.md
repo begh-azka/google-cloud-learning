@@ -1,0 +1,13 @@
+# GCP Pricing
+
+- Google Cloud Platform was the first public public Cloud Service which provides **per second billing**.
+- **Customer Friendly Pricing:**
+  - No upfront Costs
+  - Pay as you Go
+  - No Termination Fee
+    
+- **Sustained Use Discount:** Automatic discount upto 30% on workload that runs for a significant portion of Billing Month.
+- **Preemptible VM:** Upto 80% off on Workload but these can be terminated by gcp at any point. Good for logging agents.
+- **ColdLine Storage:** Archival Storage at very cheap rate.
+- **Custom Machines:** Pick any Configuration of CPU and Memory and save up to 48% on Compute Engine Resources.
+- **Committed Use Discount:** Save upto 57% on Lock-in Resources.
