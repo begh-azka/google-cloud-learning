@@ -21,7 +21,7 @@
    - Role Types: 
      - **Predefined** (Already exist. Managed by GCP)
      - **Custom** (We can create new roles as per our needs)
-     - **Basic** (Existed before IAM existed. In the early GCP days, there were basic roles like editor, viewer and owner. They are not recommended.)
+     - **Basic** (Called Primitive roles. Existed before IAM existed. In the early GCP days, there were basic roles like editor, viewer and owner. They are not recommended.)
       
 4. **Policies:**
    - **Policies are used to define who has access to what resources and what actions they can perform on those resources.**
@@ -31,6 +31,9 @@
    - Each IAM policy consists of a set of rules.
      A rule specifies a role and the members to whom that role is granted.
    - You can have multiple rules within a single IAM policy, allowing you to grant different permissions to different members.
+   - **IAM Bindings:**
+     - In Cloud IAM, identities can get access to resource APIs via IAM policies. In these policies, you can define one or more bindings in which members are granted an IAM role.
+     - This associates the binding’s members with all the permissions granted to this role at that policy level (organization, folder or project) and below (if any).
 
 ## Naming Convention
 ### For Roles:
