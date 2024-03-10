@@ -56,6 +56,12 @@
   - **GA**: The role has been widely tested, and all of its permissions are for Google Cloud services or features that are generally available.
   - **DEPRECATED**: The role is no longer in use.
 
+## How to create a Custom Role
+- Go to IAM -> Roles -> Create Role
+- There filter on any predefined role that is related to your resource and select any permissions that you need.
+- Choose the launch stage
+- Custom Role is created this way.
+
 ## IAM Best Practices
 
 1. **Principle of Least Privilege:** Give least possible privilege needed for a role.
