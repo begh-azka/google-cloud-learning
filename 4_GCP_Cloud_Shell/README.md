@@ -14,11 +14,25 @@
 ```sh
 gcloud compute instances list
 ```
-2. Start a terminated instance
+2. Start a terminated instance in a particular zone
 ```sh
-gcloud compute instances start instance-20240308-045108 --zone=us-central1-a
+gcloud compute instances start (instance-name) --zone=us-central1-a
 ```
 3. List out instances in a particular zone
 ```sh
 gcloud compute instances list --zones=us-central1-a
 ```
+4. List out Buckets
+```sh
+gsutil ls
+```
+5. Create a new Bucket
+```
+gsutil mb gs://name-of-your-bucket
+```
+6. Delete a Bucket
+   ```
+   gsutil rm -r gs://name-of-your-bucket
+   ```
+7. Use cloud storage commands instead of gsutil for large data operations
+   `bq` command is used for `bigquery` and `cbt` for Big Table
