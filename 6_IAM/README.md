@@ -19,11 +19,11 @@
 2. **Roles:**
    - **A role contains a set of permissions that allows you to perform specific actions on Google Cloud resources.** To make permissions available to principals, including users, groups, and service accounts, you grant roles to the principals.
    - Role Types: 
-    - **Predefined** (Already exist. Managed by GCP)
-    - **Custom** (We can create new roles as per our needs)
-    - **Basic** (Existed before IAM existed. In the early GCP days, there were basic roles like editor, viewer and owner. They are not recommended.)
+     - **Predefined** (Already exist. Managed by GCP)
+     - **Custom** (We can create new roles as per our needs)
+     - **Basic** (Existed before IAM existed. In the early GCP days, there were basic roles like editor, viewer and owner. They are not recommended.)
       
-3. **Policies:**
+4. **Policies:**
    - **Policies are used to define who has access to what resources and what actions they can perform on those resources.**
    - They are attached to resources.
    - Used to enforce access control whenever that resource is accessed.
