@@ -1,0 +1,16 @@
+{
+  "bindings": [
+    {
+      "role": "roles/editor",
+      "members": [
+        "user:jane@example.com",
+        "group:engineering-team@example.com",
+        "serviceAccount:my-app@appspot.gserviceaccount.com"
+      ]
+    },
+    {
+      "role": "roles/viewer",
+      "members": ["user:bob@example.com"]
+    }
+  ]
+}
