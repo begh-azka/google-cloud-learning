@@ -3,7 +3,7 @@
 Google Compute Engine is a virtual machine (VM) service that allows users to create and run VMS on Google’s infrastructure. Compute Engine provides a variety of VM types, including standard, high-memory, high-CPU, and custom machine types. A default Compute Service Account is associated with VMs when we create them.
 
 ## Machine Types
-- There are several types of machine families:
+There are several types of machine families:
 1. **General purpose machine types:**
    - Machines with a general purpose are the most prevalent and can handle a variety of workloads.
    - They come in various sizes and offer a balance of CPU and memory resources.
