@@ -77,3 +77,36 @@ We can also checkout the equivalent code section in Google Cloud. It gives us co
 - We can add labels (tags) to our VMs and Disks.
 - We can specify if we want to keep the disk or delete it (default) after we delete a VM in advanced options.
 
+### Snapshots
+- To take snapshots of your VM's Disk, go to the toggle on the RHS in Compute Engine and there you can select Snapshots.
+- Snapshots can be simple Snapshots (Standard backup and disaster recovery; stored in a separate location from your disk), Instant Snapshots (Rapid restoration; stored in the same location as your disk) or Archive Snapshots (for long-term storage).
+
+### Spot Instances
+- Preemptive
+- Cheaper that standard
+- Ideal for fault-tolerant workload (Those that don't lose data if a node or resource fails - GKE)
+- GKE can use this.
+- We can use Managed Instance Groups in Compute Engine for spot instances. They are a collection of identical nodes. If one fails other has similar set up (so HA) so the other is used if google takes away a spot instance.
+
+## Managed Instance Groups
+
+### Instance Group:
+- Collection of Instances that are managed as a single entity.
+- **Two Types:**
+  - Managed Instance Group
+  - Unmanaged Instance Group
+    
+### Managed Instance Group
+- Multiple Identical VMs
+- Configuration defined in instance template
+- Features include:
+  - Autoscaling
+  - Autohealing
+  - Multi-zone Deployment
+  - Auto-updating (Patching)
+
+### Unmanaged Instance Group
+- Multiple (possibly Heterogenous VMs)
+- Used to apply load balancing across heterogeneous group of instances.
+- In general, recommended for legacy clusters only
+- No autoscaling, autohealing, or auto-patching
