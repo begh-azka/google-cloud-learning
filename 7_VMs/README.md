@@ -99,6 +99,7 @@ We can also checkout the equivalent code section in Google Cloud. It gives us co
 ### Managed Instance Group
 - Multiple Identical VMs
 - Configuration defined in instance template
+- Types: Stateful and stateless
 - Features include:
   - Autoscaling
   - Autohealing
@@ -110,3 +111,13 @@ We can also checkout the equivalent code section in Google Cloud. It gives us co
 - Used to apply load balancing across heterogeneous group of instances.
 - In general, recommended for legacy clusters only
 - No autoscaling, autohealing, or auto-patching
+
+### To Create Instance Groups
+- Go to RHS of compute cloud and select instance groups.
+- Create a Launch Template with the required Configuartion.
+- We can keep it in multi-zone or single zone
+- Autoscaling can be turned on or off. If On then max and min can be set. Target utilization can be set as well which will indicate when instances can be scaled out or down. Target Utilization -> CPU utilization, HTTP load balancing servicing capacity, Stackdriver metrics.
+  - Cool Down Period is allowed for instances to finish initializing before metrics are taken.
+  - Stabilization period is time autoscaler uses to calculate MIGs recommended target size.
+  - Avoids thrashing i.e rapidly adding and removing instances.
+- Healthcheck can be configured and protocol/port can be specified. Check interval and Healthy Threshold need to be specified with a timeout.
