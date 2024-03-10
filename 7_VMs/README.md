@@ -1,6 +1,6 @@
 # Cloud Compute Engine
 
-Google Compute Engine is a virtual machine (VM) service that allows users to create and run VMS on Google’s infrastructure. Compute Engine provides a variety of VM types, including standard, high-memory, high-CPU, and custom machine types.
+Google Compute Engine is a virtual machine (VM) service that allows users to create and run VMS on Google’s infrastructure. Compute Engine provides a variety of VM types, including standard, high-memory, high-CPU, and custom machine types. A default Compute Service Account is associated with VMs when we create them.
 
 ## Machine Types
 - There are several types of machine families:
@@ -28,15 +28,23 @@ Google Compute Engine is a virtual machine (VM) service that allows users to cre
 - In preset, you have **Shared Core**, **High CPU**, **High Memory** and **Standard** options.
   
 ### VM Provisioning Models
-- VM Provisioning Models are of two types:
-  1. **Standard**
-  2. **Spot**: Preemptive machines that can be terminated at any time by Google.
+VM Provisioning Models are of two types:
+1. **Standard**
+2. **Spot**: Preemptive machines that can be terminated at any time by Google.
 
 ### Boot Disk
 - Here you can select what kind of machine image you want: **public** or **custom**.
 - Snapshots, Archive Snapshots and Existing Disks are some of the other options avaialble.
 - In public image, you can select the **Operating System** of your VM, its version, its disk size and boot disk type.
 
+### Access Scopes
+- We can select the type and level of API access to grant the VM.
+- It can have default access. Default contains Read-only access to Storage and Service Management, Write access to Stackdriver Logging and Monitoring, Read/Write access to Service Control.
+- It can have full access to all Cloud APIs
+- It can have access to selective APIs
+
+### Observability - Ops Agent
+- To collect more metrics, ops agent can be installed on our VMs.
 
 
 
