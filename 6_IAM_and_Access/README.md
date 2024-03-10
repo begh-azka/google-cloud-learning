@@ -5,7 +5,7 @@
 - Represents a user or entity that has privileges to perform actions in Google Cloud.
 - GCP has 7 types of **Principals** (called Members earlier):
   - **Google Account:** Represents a person (an email address).
-  - **Service Account:** Represents an application or instance account rather than a user (have an email id).
+  - **Service Account:** Represents an application or instance account rather than a user (has an email id).
   - **Google Group:** Represents collection of Google Accounts and Service Accounts. Has a unique email address. Helps to apply access policy/roles to a group of users.
   - **Google Workspace Account:** It is a member of an organization's Google Workspace domain. Provides collaboration services for enterprises. Tools like Gmail, Calendar, Meet, Chat, Drive, Docs etc. are included. 
   - **Cloud Identity Domain:** Cloud Identity is an **Identity as a Service** solution that centrally manages users and groups. You can use IAM to manage access to resources for each Cloud Identity account.
