@@ -2,7 +2,8 @@
 
 ### Identity
 
-- Represents a user or entity that has privileges to perform actions in Google Cloud.
+- **Represents a user or entity that has privileges to perform actions in Google Cloud.**
+  
 - GCP has 7 types of **Principals** (called Members earlier):
   - **Google Account:** Represents a person (an email address).
   - **Service Account:** Represents an application or instance account rather than a user (has an email id).
@@ -48,7 +49,8 @@
 - Permissions have the following format: **`SERVICE.RESOURCE.VERB`**
 - Example: compute.instances.list, pubsub.topics.publish
 
-## Custom Role Lifecycle
+## Custom Role
+### Custom Role Lifecycle
 - Custom roles include a launch stage as part of the role's metadata. The most common launch stages for custom roles are **ALPHA, BETA, and GA.** These launch stages are informational; they help you keep track of whether each role is ready for widespread use. Another common launch stage is **DISABLED**. This launch stage lets you disable a custom role.
 - It is recommended that you use launch stages to convey the following information about the role:
   - **EAP** or **ALPHA**: The role is still being developed or tested, or it includes permissions for Google Cloud services or features that are not yet public. It is not ready for widespread use.
@@ -56,11 +58,15 @@
   - **GA**: The role has been widely tested, and all of its permissions are for Google Cloud services or features that are generally available.
   - **DEPRECATED**: The role is no longer in use.
 
-## How to create a Custom Role
+### How to Create a Custom Role
 - Go to IAM -> Roles -> Create Role
 - There filter on any predefined role that is related to your resource and select any permissions that you need.
 - Choose the launch stage
 - Custom Role is created this way.
+
+### How to Assign a Role to a User
+- In the IAM dashboard select the user to whom you want to assign a role. Click on Edit.
+- There click on Assign another Role and choose the role.
 
 ## IAM Best Practices
 
