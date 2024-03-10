@@ -29,7 +29,7 @@
    - Used to enforce access control whenever that resource is accessed.
    - Defined with **bindings**, list of members and role granted.
    - Each IAM policy consists of a set of rules.
-   - A rule specifies a role and the members to whom that role is granted.
+     A rule specifies a role and the members to whom that role is granted.
    - You can have multiple rules within a single IAM policy, allowing you to grant different permissions to different members.
 
 ## IAM Best Practices
