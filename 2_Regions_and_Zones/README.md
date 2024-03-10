@@ -14,4 +14,4 @@
 - Regional Resources are redundantly deployed across multiple zones within a region.
 
 ### Global Resources
-- 
+- Resources that can be accessed regardless of zone or location.
