@@ -32,6 +32,19 @@
      A rule specifies a role and the members to whom that role is granted.
    - You can have multiple rules within a single IAM policy, allowing you to grant different permissions to different members.
 
+## Naming Convention
+### For Roles:
+
+- `Predefined roles:` **roles/SERVICE.IDENTIFIER**
+   - Example: roles/accessapproval.approver, roles/apigateway.viewer
+- `Project-level custom roles:` **projects/PROJECT_ID/roles/IDENTIFIER**
+   - Example: 
+- `Organization-level custom roles:` **organizations/ORG_ID/roles/IDENTIFIER**
+
+### For Permissions
+- Permissions have the following format: **`SERVICE.RESOURCE.VERB`**
+- Example: compute.instances.list, pubsub.topics.publish
+
 ## IAM Best Practices
 
 1. **Principle of Least Privilege:** Give least possible privilege needed for a role.
