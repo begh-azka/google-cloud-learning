@@ -1,6 +1,7 @@
 # Identity and Access
 
 ### Identity
+
 - Represents a user or entity that has privileges to perform actions in Google Cloud.
 - GCP has 7 types of **Principals** (called Members earlier):
   - **Google Account:** Represents a person (an email address).
@@ -11,16 +12,28 @@
   - **All Authenticated Users**
   - **All Users**
     
-### Access Control Concepts
-- Resources
-- Permissions
-- _Roles_
-  - **Predefined** (Already exist)
-  - **Custom** (We can create new roles as per our needs)
-  - **Basic** (Existed before IAM existed. In the early GCP days, there were basic roles like editor, viewer and owner. They are not recommended.)
-- Policies (Define what identities can do on what resources)
-  
+## Access Control Concepts
+
+1. **Permissions**: Permissions are specific actions that can be performed on resources, such as read, write, delete, etc.
+   
+2. **Roles:**
+   - **A role contains a set of permissions that allows you to perform specific actions on Google Cloud resources.** To make permissions available to principals, including users, groups, and service accounts, you grant roles to the principals.
+   - Role Types: 
+    - **Predefined** (Already exist. Managed by GCP)
+    - **Custom** (We can create new roles as per our needs)
+    - **Basic** (Existed before IAM existed. In the early GCP days, there were basic roles like editor, viewer and owner. They are not recommended.)
+      
+3. **Policies:**
+   - **Policies are used to define who has access to what resources and what actions they can perform on those resources.**
+   - They are attached to resources.
+   - Used to enforce access control whenever that resource is accessed.
+   - Defined with **bindings**, list of members and role granted.
+   - Each IAM policy consists of a set of rules.
+   - A rule specifies a role and the members to whom that role is granted.
+   - You can have multiple rules within a single IAM policy, allowing you to grant different permissions to different members.
+
 ## IAM Best Practices
+
 1. **Principle of Least Privilege:** Give least possible privilege needed for a role.
   - Basic Roles are NOT recommended.
     - Prefer pre-defined roles whenever possible.
