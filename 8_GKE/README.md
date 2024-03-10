@@ -39,3 +39,9 @@ kubectl create clusterrolebinding cluster-admin-binding \
 --clusterrole=cluster-admin \
 --user=azkabegh59@gmail.com
 ```
+### Use Helm Charts where kubectl is installed
+```
+helm repo add bitnami url-of-bitnami
+helm repo ls
+helm install redis bitnami/redis
+```
