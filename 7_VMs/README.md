@@ -20,6 +20,12 @@ Google Compute Engine is a virtual machine (VM) service that allows users to cre
    - These are produced for activities that call for **specialized hardware**, such GPUs or TPUs.
    - They are enhanced for scientific computing, machine learning, and deep learning.
    - Examples include **n1-highmem-96** and **n1-standard-gpu**.
-https://media.geeksforgeeks.org/wp-content/uploads/20230526112124/gcp-compute-enginee-features.webp![image](https://github.com/begh-azka/google-cloud-learning/assets/97597065/7162e7ff-7af7-4fd4-8d86-67d4927a96b2)
+- There are storage and memory optimised machines as well.
+![image](https://github.com/begh-azka/google-cloud-learning/assets/97597065/2699f457-026d-47ab-9abd-384876e55d4e)
+
+### VM Provisioning Models
+- VM Provisioning Models are of two types:
+1. Standard
+2. Spot: Preemptive machines that can be terminated at any time by Google.
 
 
