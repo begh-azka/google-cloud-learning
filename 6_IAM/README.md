@@ -48,11 +48,19 @@
 - Permissions have the following format: **`SERVICE.RESOURCE.VERB`**
 - Example: compute.instances.list, pubsub.topics.publish
 
+## Custom Role Lifecycle
+- Custom roles include a launch stage as part of the role's metadata. The most common launch stages for custom roles are **ALPHA, BETA, and GA.** These launch stages are informational; they help you keep track of whether each role is ready for widespread use. Another common launch stage is **DISABLED**. This launch stage lets you disable a custom role.
+- It is recommended that you use launch stages to convey the following information about the role:
+  - **EAP** or **ALPHA**: The role is still being developed or tested, or it includes permissions for Google Cloud services or features that are not yet public. It is not ready for widespread use.
+  - **BETA**: The role has been tested on a limited basis, or it includes permissions for Google Cloud services or features that are not generally available.
+  - **GA**: The role has been widely tested, and all of its permissions are for Google Cloud services or features that are generally available.
+  - **DEPRECATED**: The role is no longer in use.
+
 ## IAM Best Practices
 
 1. **Principle of Least Privilege:** Give least possible privilege needed for a role.
   - Basic Roles are NOT recommended.
-    - Prefer pre-defined roles whenever possible.
+    - Prefer pre-defined and even better custom roles whenever possible.
   - Use Service Accounts with Minimum Privileges.
     - Use different Service Accounts for different apps/purposes.
 
