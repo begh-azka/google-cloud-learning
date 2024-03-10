@@ -18,3 +18,6 @@
 ## Compute
 1. **Compute Engine:**
    - GCP provides a scalable range of computing resources. It is highly customizable virtual machine and provides an option to deploy your code directly or via container.
+2. **Google App Engine:**
+   - App Engine is a fully managed, serverless platform for developing and hosting web applications at scale. 
+   - Users can choose from several popular languages, libraries, and frameworks to develop their applications and then App Engine takes care of provisioning servers and scaling app instances based on demand. It is a PaaS for building scalable applications.
