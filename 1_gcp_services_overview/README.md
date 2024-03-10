@@ -31,7 +31,13 @@
 ## Developer Tools
 1. Artifact Registry: 
 - Artifact Registry is a service for managing container images and packages.
-
+2. Cloud SDK
+3. Deployment Manager
+4. Cloud Source Repository
+5. Cloud Test Lab
+6. Cloud Build
+7. Cloud Deploy
+  
 ## Serverless Computing
 1. Cloud Functions: 
 - Cloud Functions is a lightweight, event-based, asynchronous compute solution that allows you to create small, single-purpose functions that respond to cloud events without the need to manage a server or a runtime environment.
@@ -50,3 +56,15 @@
 3. Cloud BigTable
 4. Cloud Data Store
 5. Cloud Persistent Disk
+
+## Identity and Security
+1. Google Cloud Resource Manager
+2. Cloud IAM
+3. Cloud Security Scanner
+4. Cloud Platform Security
+
+## Management Tools
+1. StackDriver
+2. Monitoring
+3. Logging
+4. Error Reporting
