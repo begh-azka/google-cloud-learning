@@ -11,3 +11,5 @@
 - **ColdLine Storage:** Archival Storage at very cheap rate.
 - **Custom Machines:** Pick any Configuration of CPU and Memory and save up to 48% on Compute Engine Resources.
 - **Committed Use Discount:** Save upto 57% on Lock-in Resources.
+
+**Google Cloud Pricing Calculator** can be used to estimate the charges of your resources.
