@@ -12,3 +12,6 @@ After connecting with the server, pinged other instances. It did not work as ICM
 Created a Firewall Rule and added icmp in the protocol option and kept source and target fields same as last rule.
 
 In Firewall Rules Table, one column is Filters. It means Source.
+Source = my ip/cidr = 32
+and to log in to this instance run 
+gcloud compute ssh --zone "asia-east1-b" "new-vpc-instance-1" --project "eco-volt-415908"
