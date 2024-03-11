@@ -19,7 +19,7 @@ VPC networks have the following properties:
 - Each subnet is associated with a region.
 - A network must have at least one subnet before you can use it.
 - VPC networks do not have any IP address ranges associated with them, IP ranges are defined for the subnets. Subnets are regional resources. **Each subnet defines a range of IP addresses.**
-- **Users can create more than one Subnet per Region.**
+- **Users can create more than one Subnet per Region.** Subnet IPs cannot overlap.
 ![image](https://github.com/begh-azka/gcp/assets/97597065/4d159a6e-f621-4519-a0dd-27a5eeee4c0d)
 
 ### Need for VPC Subnets
