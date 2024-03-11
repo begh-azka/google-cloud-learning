@@ -11,7 +11,7 @@
 - In GCP each instance has a Controller that is kept informed of all applicable Routes from network's Routing Table.
 - Each packet leaving an instance is delivered to the appropriate next hop of an applicable Route based on a routing order. Any addition or deletion in routes is automatically propagated in VM's Controller.
 - **In VPC, user can have System Generated Routes or Custom Routes.**
-### System Genearted Routes:
+### System Generated Routes:
 **Default VPC has two types of System Generated Routes: Default Route and Subnet Route**
 #### Default Route: 
 Path out of VPC network including path to Internet.
