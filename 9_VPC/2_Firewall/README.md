@@ -32,7 +32,7 @@
 7. Protocol and Port
    
 ### Priority of Rules
-- If we created an ICMP allow rule with apriority of 1000 and later created a firewall rule with priority of 900 to deny icmp traffic, then icmp will be blocked because deny rule has a higher priority compared to allow rule.
+- If we created an ICMP allow rule with apriority of 1000 and later created a firewall rule with priority of 900 to deny ICMP traffic, then ICMP will be blocked because here the deny rule has a higher priority compared to allow rule.
 
 ## Configure a Firewall
 You can configure your own firewall rules:
