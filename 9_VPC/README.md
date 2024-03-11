@@ -25,7 +25,7 @@ VPC networks have the following properties:
 ### Need for VPC Subnets
 Different types of resources are created in cloud such as databases, compute, etc. Each type of resource has its own **access needs**. Some of them are **public** and some are **private resources**.
 1. **Subnets are needed to separate Public Resources from Private Resources inside a VPC**
-     - Public resources (Load Balancers) can be accessed from outside and should be kept in public subnets while as resources like database VMs should be kept in private subnets.
+     - Public resources (Load Balancers) can be accessed from outside and should be kept in public subnets while as resources like database VMs should be kept in private subnets. Private resources are equipped with Internal IPs only while as Public resources have both Internal and External IPs.
 2. **We need Subnets in order to distribute resources across multiple regions for High Availability.**
 
 ### Creating VPCs and Subnets in GCP
@@ -79,3 +79,4 @@ Google Cloud offers three types of VPC networks, determined by their subnet crea
   - **Example**: You could have a tag called web-server and have a firewall policy that says any VM with that tag should have ports 80, 443 and 22 opened. 
 - **Firewall Rules can be automatically applied to all instances**. Also, **there is an Implied Egress firewall rule to allow all Egress traffic to all destinations. Likewise, there is an Implied Ingress Firewall Rule to deny all ingress traffic from all sources**.
 - Firewall Rules are at the network resource level and are not shared between projects and other networks. Unique to VPC.
+- Subnets can have primary and secondary CIDR range. Using IP Aliasing user can setup multiple IP Addresses drawn from Primary/Secondary Range of IPs.
