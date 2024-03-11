@@ -85,6 +85,6 @@ Google Cloud offers three types of VPC networks, determined by their subnet crea
 - We can create VMs and only allow them to have private IPs by going to networking option and keeping External IPv4 option to None.
 - Subnets can have primary and secondary CIDR range. Using IP Aliasing user can setup multiple IP Addresses drawn from Primary/Secondary Range of IPs.
 - IPs can be **static** as well. We can reserve a static IP (External and Internal). Static IPs can be regional or Global. These static IPs can be associated with VMs or Load Balancers.
-- They can be attached to existing VMs while we are reserving an IP or we can attach a static IP to a VM when we are creating a new machine.
+- **They can be attached to existing VMs while we are reserving an IP or we can attach an existing static IP to a VM when we are creating a new machine.**
+- **Regional can be attached to any VMs that lie in the same region.**
 - Global IPs cannot be attached.
-- Regional can be attached to any VMs that lie in the same region.
