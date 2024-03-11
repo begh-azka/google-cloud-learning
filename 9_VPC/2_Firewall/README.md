@@ -4,6 +4,7 @@
 - They don't just exist between your instances and other networks, but also between individual instances within the same network.
 - Firewalls are stateful.
 - **Each Firewall Rule has priority (0-65535) assigned to it. 0 has the highest priority.**
+- They can be Allow or Deny Rules.
   
 ### Default Implied Rules:
 - **Every VPC network has two Implied Firewall Rules that block all incoming connections and allow all outgoing connections.**
