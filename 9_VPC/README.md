@@ -79,4 +79,6 @@ Google Cloud offers three types of VPC networks, determined by their subnet crea
   - **Example**: You could have a tag called web-server and have a firewall policy that says any VM with that tag should have ports 80, 443 and 22 opened. 
 - **Firewall Rules can be automatically applied to all instances**. Also, **there is an Implied Egress firewall rule to allow all Egress traffic to all destinations. Likewise, there is an Implied Ingress Firewall Rule to deny all ingress traffic from all sources**.
 - Firewall Rules are at the network resource level and are not shared between projects and other networks. Unique to VPC.
+  
 - Subnets can have primary and secondary CIDR range. Using IP Aliasing user can setup multiple IP Addresses drawn from Primary/Secondary Range of IPs.
+- IPs can be **static** as well. We can reserve a static IP (External and Internal). Static IPs can be regional or Global.
