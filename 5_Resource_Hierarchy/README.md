@@ -1,12 +1,8 @@
 # Resource Hierarchy
-
-- Organization
-- Folder
-- Project
   
 **-----------------------------------------------------------------**
 
-- **Organizations -> Folder -> Project -> Resources**
+**Organizations -> Folder -> Project -> Resources**
   
 **-----------------------------------------------------------------**
 
