@@ -35,4 +35,10 @@ gsutil mb gs://name-of-your-bucket
    gsutil rm -r gs://name-of-your-bucket
    ```
 7. Use cloud storage commands instead of gsutil for large data operations
+   
    `bq` command is used for `bigquery` and `cbt` for Big Table
+   
+9. To ssh into a VM:
+    ```
+    gcloud compute ssh --zone "asia-east1-b" "new-vpc-instance-1" --project "eco-volt-415908"
+    ```
