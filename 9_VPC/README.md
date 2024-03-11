@@ -3,7 +3,8 @@
 - A VPC is a virtual network that closely resembles a traditional network that you'd operate in your own data center. After you create a VPC, you can add subnets.
 - It runs on shared infrastructure like a public cloud does but isolates customers from each other.
 - VPC resources are then reserved for use for each specific customer. The isolation creates a private and more secure public cloud.
-
+- Resources in a VPC can communicate with each other using Internal IPs.
+  
 ## Google Cloud VPC
 VPC networks have the following properties:
 - **VPC networks including their associated Routes and Firewall rules are Global resources. They are not associated with any particular region or zone.**
@@ -23,7 +24,6 @@ VPC networks have the following properties:
 
 ### Need for VPC Subnets
 Different types of resources are created in cloud such as databases, compute, etc. Each type of resource has its own **access needs**. Some of them are **public** and some are **private resources**.
-        
 1. **Subnets are needed to separate Public Resources from Private Resources inside a VPC**
      - Public resources (Load Balancers) can be accessed from outside and should be kept in public subnets while as resources like database VMs should be kept in private subnets.
 2. **We need Subnets in order to distribute resources across multiple regions for High Availability.**
@@ -67,3 +67,15 @@ Google Cloud offers three types of VPC networks, determined by their subnet crea
          
     3. What is the difference between **0.0.0.0/0** and **0.0.0.0/32**?
        - **0.0.0.0/0** represents all the IP addresses. **0.0.0.0/32** represents just one IP address -> **0.0.0.0** with a **CICDR block** of **32**
+
+## VPC Takeaways
+- **VPCs are Global resources; routing traffic between regions is automatic**.
+- **Subnets are associated with regions**; traffic transparently moves across zones.
+- Routes are associated with the VPC. They can be restricted to instances via **instance tags** (or service accounts).
+- Instances are made public by specifically enabling them with an external IP address; the “Default route to the internet” automatically routes Internet-bound traffic to the Internet gateway or NAT gateway (if exists) based on the existence of the external IP address.
+- Firewall has an **explicit-deny policy**, meaning that any traffic that needs to be permitted must have a rule created. You cannot create Deny Rules, only Allow rules.
+- **`Firewall Rules can match IP addresses or ranges, but can also match tags.`**
+- Tags are user-defined strings that help organize firewall policies for standards-based policy approach.
+  - **Example**: You could have a tag called web-server and have a firewall policy that says any VM with that tag should have ports 80, 443 and 22 opened. 
+- **Firewall Rules can be automatically applied to all instances**. Also, **there is an Implied Egress firewall rule to allow all Egress traffic to all destinations. Likewise, there is an Implied Ingress Firewall Rule to deny all ingress traffic from all sources**.
+- Firewall Rules are at the network resource level and are not shared between projects and other networks. Unique to VPC.
