@@ -18,6 +18,7 @@ VPC networks have the following properties:
 - Each subnet is associated with a region.
 - A network must have at least one subnet before you can use it.
 - VPC networks do not have any IP address ranges associated with them, IP ranges are defined for the subnets. Subnets are regional resources. **Each subnet defines a range of IP addresses.**
+- **Users can create more than one Subnet per Region.**
 ![image](https://github.com/begh-azka/gcp/assets/97597065/4d159a6e-f621-4519-a0dd-27a5eeee4c0d)
 
 ### Need for VPC Subnets
@@ -50,3 +51,19 @@ Google Cloud offers three types of VPC networks, determined by their subnet crea
 1. **Enable Private Google Access -** Set whether VMs in a subnet can access Google services without assigning external IP addresses. Allows `VMs` to connect to *`Google Services`* using `private IPs`. Using private IPs, communication happens within a network.
 2. **Enable FlowLogs -** To troubleshoot any VPC related network issues.
 3. **Enable Hybrid Subnets:** Allowing hybrid subnet modifies the VPC network routing behavior to allow overlap between the subnet's IP address range and those of custom dynamic routes.
+
+## CIDR (Classless Inter-Domain Routing) Blocks:
+- Resources in a network use Continuous IP addresses to make routing easy.
+- **CIDR Blocks express a range of addresses that resources in a network can have.**
+- A CIDR block consists of a **starting IP address** (69.208.0.0) and **a range** (/28).
+  - **Example:** CIDR Block 69.208.0.0/28 represents addresses from 69.208.0.0 to 69.208.0.15 - a total of  16 addresses. One is reserved for the subnet and one for broadcast. Usable = 14.
+  - **Quick Tip:** **69.208.0.0/28** indicates that the **first** 28 bits (out of 32 in subnet mask) are fixed (1s). These 1s represent network bits and 0s represent host bits. Here host bits are 4, so 2 to the power 4 = 16 addresses.
+  - **Exercise:**
+    1. How many addresses does **69.208.0.0/26** represent?
+       - 2 to the power (32-26) = 2 to the power 6 = 64 addresses from 69.208.0.0 to 69.208.0.63
+         
+    2. How many addresses does **69.208.0.0/30** represent?
+       - 2 to the power (32-30) = 2^2 = 4 = 4 addresses from 69.208.0.0 to 69.208.0.3
+         
+    3. What is the difference between **0.0.0.0/0** and **0.0.0.0/32**?
+       - **0.0.0.0/0** represents all the IP addresses. **0.0.0.0/32** represents just one IP address -> **0.0.0.0** with a **CICDR block** of **32**
