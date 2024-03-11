@@ -1,0 +1,12 @@
+Created a VPC with three subnets.
+Created instances in these subnets.
+
+1. SSH
+Tried to SSH into one. Failed as no rules are defines for the firewall. So access is blocked.
+Created a firewall rule for port 22 and target can be any instances in a network or service accounts or network tags.
+Source can be an IP range and/or a source tag or SA.
+Destination does not need to be tampered with. It will match the target you specified once you create the rule.
+
+2. ICMP
+After connecting with the server, pinged other instances. It did not work as ICMP was not allowed.
+Created a Firewall Rule and added icmp in the protocol option and kept source and target fields same as last rule.
