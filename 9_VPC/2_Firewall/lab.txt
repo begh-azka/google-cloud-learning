@@ -2,9 +2,9 @@ Created a VPC with three subnets.
 Created instances in these subnets.
 
 1. SSH
-Tried to SSH into one. Failed as no rules are defines for the firewall. So access was blocked.
-Created a firewall rule for port 22 and target can be any instances in a network or service accounts or network tags.
-Source can be an IP range and/or a source tag or SA.
+Tried to SSH into one. Failed as no rules were defined for the firewall. So access was blocked.
+Created a firewall rule for port 22 and target could be any instance in a network or service accounts or network tags.
+Source can be an IP range and/or a source tag or Service Account.
 Destination does not need to be tampered with. It will match the target you specified once you create the rule.
 
 2. ICMP
@@ -12,6 +12,6 @@ After connecting with the server, pinged other instances. It did not work as ICM
 Created a Firewall Rule and added icmp in the protocol option and kept source and target fields same as last rule.
 
 In Firewall Rules Table, one column is Filters. It means Source.
-Source = my ip/cidr = 32
+Add Source = my-ip/cidr => cidr 32
 and to log in to this instance run 
 gcloud compute ssh --zone "asia-east1-b" "new-vpc-instance-1" --project "eco-volt-415908"
