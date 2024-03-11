@@ -29,21 +29,23 @@
 5. Target (Instance to which a Rule applies)
 6. Source for Ingress Rules or Destination for Egress Rules
 7. Protocol and Port
+   
+### Priority of Rules
+- If we created an ICMP allow rule with apriority of 1000 and later created a firewall rule with priority of 900 to deny icmp traffic, then icmp will be blocked because deny rule has a higher priority compared to allow rule.
 
 ## Configure a Firewall
 You can configure your own firewall rules:
-- **Ingress Rules:** Rules for Incoming traffic from outside to GCP targets.
-  - **Target (defines the destination):** All instances or instances with Tag/SA
-  - **Source (defines where traffic is comingfrom):** CIDR or All instances/instances with TAG/SA.
+1. **Ingress Rules:** Rules for Incoming traffic from outside to GCP targets.
+   - **Target (defines the destination):** All instances or instances with Tag/SA
+   - **Source (defines where traffic is comingfrom):** CIDR or All instances/instances with TAG/SA.
       
-- **Egress Rules:** Rules for Outgoing traffic to destination from GCP targets
-  - **Target (defines the source):** All instances or instances with Tag/SA.
-  - **Destination:** CIDR Block
+2. **Egress Rules:** Rules for Outgoing traffic to destination from GCP targets
+   - **Target (defines the source):** All instances or instances with Tag/SA.
+   - **Destination:** CIDR Block
  
-Users can use Service Accounts to create Firewall Rules that are more specific in nature. To get strict control over Firewall Rules, use Source and Target Service Accounts instead of Target Tags and Source Tags. Users cannot mix and match service accounts and network tags in any firewall rule.
+Users can use Service Accounts to create Firewall Rules that are more specific in nature. To get strict control over Firewall Rules, use Source and Target Service Accounts instead of Target Tags and Source Tags. Users cannot mix and match service accounts and network tags in any firewall rule. Example: Create a rule and keep source as Network tags. Then all the VMs with those tags will come under that rule.
 
 ## Forwarding Rules
 - While routes govern traffic leaving an instance, **forwarding rules direct traffic to a Google Cloud resource in a VPC network** based on IP address, protocol, and port.
 - Some forwarding rules direct traffic from outside of Google Cloud to a destination in the network; others direct traffic from inside the network.
 - **Destinations** for forwarding rules are **target instances**, **load balancer targets** (target proxies, target pools, and backend services), and **Cloud VPN gateways**.
-
