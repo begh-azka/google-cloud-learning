@@ -10,3 +10,5 @@ Destination does not need to be tampered with. It will match the target you spec
 2. ICMP
 After connecting with the server, pinged other instances. It did not work as ICMP was not allowed.
 Created a Firewall Rule and added icmp in the protocol option and kept source and target fields same as last rule.
+
+In Firewall Rules Table, one column is Filters. It means Source.
