@@ -41,3 +41,9 @@ You can configure your own firewall rules:
   - **Destination:** CIDR Block
  
 Users can use Service Accounts to create Firewall Rules that are more specific in nature. To get strict control over Firewall Rules, use Source and Target Service Accounts instead of Target Tags and Source Tags. Users cannot mix and match service accounts and network tags in any firewall rule.
+
+## Forwarding Rules
+- While routes govern traffic leaving an instance, **forwarding rules direct traffic to a Google Cloud resource in a VPC network** based on IP address, protocol, and port.
+- Some forwarding rules direct traffic from outside of Google Cloud to a destination in the network; others direct traffic from inside the network.
+- **Destinations** for forwarding rules are **target instances**, **load balancer targets** (target proxies, target pools, and backend services), and **Cloud VPN gateways**.
+
