@@ -1,4 +1,4 @@
-# Interconnection of Networks
+# Interconnection of Networks (Hybrid Cloud computing)
 [VPC Peering GCP](https://cloud.google.com/vpc/docs/using-vpc-peering)
 
 Interconnection means connecting your cloud platform with other VPC networks, it could be another cloud network or an on-premise Network.
@@ -9,7 +9,7 @@ Google provides three-types of interconnections:
 3. Partner Interconnect or Peering
 
 ## Cloud VPN
-- It securely connects your peer network to your Virtual Private Cloud (VPC) network through an **IPsec VPN Tunnel**.
+- It securely connects your peer network to your Virtual Private Cloud (VPC) network through an **IPsec VPN Tunnel**. Upto 3Gbps.
 - Traffic through **Internet** (public) but it is encrypted using **Internet Key Exchange Protocol**. Latency issue as internet is involved.
 - Traffic travelling between two networks is encrypted by one VPN Gateway and then decrypted by the other VPN Gateway.
 - This protects your data as it travels over the internet. You can also connect two instances of cloud VPN to each other.
@@ -29,8 +29,8 @@ Google provides three-types of interconnections:
 - High speed physical connection between on-premise and VPC networks:
 - This provides high availability and high throughput.
 - Two types of communications possible:
-  1. **Dedicated Interconnect -** 10 Gbps or 100 Gpbs configurations.
-  2. **Partner Interconnect -** 50 Mbps to 10 Gbps configuration.
+  1. **Dedicated/Direct Interconnect -** min 10 Gbps.
+  2. **Partner Interconnect -** min 50 Mbps.
 
 - Data Exchange happens through a private network:
   - Communication using VPC network's internal IP addresses from on-premise network.
@@ -42,7 +42,7 @@ Google provides three-types of interconnections:
 ## Direct Peering
 - Connect customer network to google network using network peering.
 - Not a GCP Service.
-- Not recommended.
+- Not recommended. Low level.
 
 
 ## Shared VPC
