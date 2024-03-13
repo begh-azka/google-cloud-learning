@@ -1,5 +1,5 @@
 # Interconnection of Networks
-
+[VPC Peering GCP](https://cloud.google.com/vpc/docs/using-vpc-peering)
 Interconnection means connecting your cloud platform with other VPC networks, it could be another cloud network or an on-premise Network.
 
 Google provides three-types of interconnections:
