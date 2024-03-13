@@ -42,3 +42,33 @@ Google provides three-types of interconnections:
 - Connect customer network to google network using network peering.
 - Not a GCP Service.
 - Not recommended.
+
+
+## Shared VPC
+- **Scenario:** Your organization has multiple projects. You want resources in different projects to talk to each other. How to allow resources in different projects to talk with internal IPs securely and efficiently?
+  - **This is done by a Shared VPC.**
+    
+- Created at **organization** or **shared folder** level (Access Needed: Shared VPC Admin)
+- Allows VPC network to be shared between projects in the same organization.
+  
+- Shared VPC contains one **host project** and **multiple service projects**
+  - **Host Project:** Contains Shared VPC network.
+    
+  - **Service Projects:** Attached to Host projects.
+ 
+- Helps you achieve **separation of concerns:** 
+  - **Network Administrators** are responsible for Host Projects and **Resource Users** use Service Projects.
+ 
+## VPC Peering
+
+- **Scenario:** How to connect VPC networks across different organizations?
+  - **This is done by VPC Peering.**
+
+- Networks (VPCs) in same project, different projects and across projects in different organizations can be peered.
+- **All communications happen using Internal IPs.** This is
+  - Highly efficient because all communication happens inside Google Network.
+  - Highly secure because it is not accessible from the internet.
+  - No charges for data transfer between services.
+
+- **Network Administration is NOT changed.**
+  - Admin of one VPC does not automatically assume the same role in the peered network.
