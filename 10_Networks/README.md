@@ -52,7 +52,7 @@ Create or select a backend service for incoming traffic. You can add multiple ba
 ### Regional Load Balancers
 - Used when workload is distributed within a region.
 - 2 Regional Load Balancers:
-  - **Internet TCP/UDP** balances TCP and UDP traffic on private networks in GCP.
+  - **Internel TCP/UDP** balances TCP and UDP traffic on private networks in GCP.
   - **Network TCP/UDP** balances SSL and TCP traffic not supported by SSL Proxy or TCP Proxy.
  
 ### How to Set up a Load Balancer
