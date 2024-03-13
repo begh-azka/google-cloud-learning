@@ -1,5 +1,7 @@
-# Interconnection of Networks (Hybrid Cloud computing)
+# Interconnection of Networks 
 [VPC Peering GCP](https://cloud.google.com/vpc/docs/using-vpc-peering)
+
+## Hybrid Cloud Implementation
 
 Interconnection means connecting your cloud platform with other VPC networks, it could be another cloud network or an on-premise Network.
 
@@ -10,7 +12,7 @@ Google provides three-types of interconnections:
 
 **To create a GCP VPN, VPN Gateway and a Tunnel must be created.**
   
-## Cloud VPN
+### Cloud VPN
 - It securely connects your peer network to your Virtual Private Cloud (VPC) network through an **IPsec VPN Tunnel**. Upto 3Gbps.
 - Traffic through **Internet** (public) but it is encrypted using **Internet Key Exchange Protocol**. Latency issue as internet is involved.
 - Traffic travelling between two networks is encrypted by one **VPN Gateway** and then decrypted by the other VPN Gateway.
@@ -27,7 +29,7 @@ Google provides three-types of interconnections:
 - Classic VPN Gateways have a single interface, a single external IP address, and uses dynamic or static routing.
 - Slow compared to HA Cloud VPN
 
-## Cloud Interconnect
+### Cloud Interconnect
 - High speed physical connection between on-premise and VPC networks:
 - This provides high availability and high throughput.
 - Two types of communications possible:
@@ -41,11 +43,13 @@ Google provides three-types of interconnections:
 - Used only for high bandwidth needs:
   - For low bandwidth, Cloud VPN is recommended.
 
-## Direct Peering
+### Direct Peering
 - Connect customer network to google network using network peering.
 - Not recommended. Low level network connection.
 - Traffic Routed using BGP.
 - Does not use GCP objects.
+
+## VPC
 
 ## Shared VPC
 - **Scenario:** Your organization has multiple projects. You want resources in different projects to talk to each other. How to allow resources in different projects to talk with internal IPs securely and efficiently?
