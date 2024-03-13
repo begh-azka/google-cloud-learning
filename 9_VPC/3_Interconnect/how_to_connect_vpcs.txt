@@ -1,0 +1,23 @@
+How to Peer 2 VPC in same or different projects:
+
+1. Create VPC a and VPC b.
+2. Create an instance in each network with public and private ip with network tags (vpc-a and vpc-b resp).
+3. Create Firewall Rules to allow ssh and icmp from 0.0.0.0/0 and within vpc a and b with target as tags (vpc-a and vpc-b)
+4. Login to instance-a and ping external ip and internal ips of instance-b. External Ip will be successfully pinged but Internal Ip ping will fail. This is becasue the instances are in two different networks and for private communication they need to be in the same vpc.
+5. Repeat this by logging in to instance-b. Result will be same as above.
+6. Create a peering connection from vpc a to b.
+7. Import and export all routes.
+8. Create a connection from vpc b to a 
+9. Once VPC connection will turn active, Login to instance-a and ping internal ip of instance-b and vice-versa.
+
+VPN to connect two networks:
+
+1. Create two custom VPC networks.
+2. Create Firewall Rules in both VPC.
+3. Create Instance in each VPC.
+4. Verify connectivity.
+5. Create two VPN one for each network.
+6. Create Static IP for each network.
+7. Set Forwarding Rules for each VPN Gateway.
+8. Create Tunnel between Gateways.
+9. Create Route for each Network.

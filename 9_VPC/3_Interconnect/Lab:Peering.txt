@@ -1,9 +1,0 @@
-1. Create two custom VPC networks.
-2. Create Firewall Rules in both VPC.
-3. Create Instance in each VPC.
-4. Verify connectivity.
-5. Create two VPN one for each network.
-6. Create Static IP for each network.
-7. Set Forwarding Rules for each VPN Gateway.
-8. Create Tunnel between Gateways.
-9. Create Route for each Network.
