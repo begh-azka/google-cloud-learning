@@ -23,3 +23,22 @@ Google provides three-types of interconnections:
 ### 2. Classic VPN
 - Classic VPN Gateways have a single interface, a single external IP address, and uses dynamic or static routing.
 - Slow compared to HA Cloud VPN
+
+## Cloud Interconnect
+- High speed physical connection between on-premise and VPC networks:
+- This provides high availability and high throughput.
+- Two types of communications possible:
+  1. **Dedicated Interconnect -** 10 Gbps or 100 Gpbs configurations.
+  2. **Partner Interconnect -** 50 Mbps to 10 Gbps configuration.
+
+- Data Exchange happens through a private network:
+  - Communication using VPC network's internal IP addresses from on-premise network.
+  - Reduces egress cost as public internet is not used
+- Supported Google APIs and services can be privately accessed from on-premise.
+- Used only for high bandwidth needs:
+  - For low bandwidth, Cloud VPN is recommended.
+
+## Direct Peering
+- Connect customer network to google network using network peering.
+- Not a GCP Service.
+- Not recommended.
