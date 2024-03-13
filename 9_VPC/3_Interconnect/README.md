@@ -1,4 +1,4 @@
-# Interconnection
+# Interconnection of Networks
 
 Interconnection means connecting your cloud platform with other VPC networks, it could be another cloud network or an on-premise Network.
 
@@ -65,7 +65,7 @@ Google provides three-types of interconnections:
   - **This is done by VPC Peering.**
 
 - Networks (VPCs) in same project, different projects and across projects in different organizations can be peered.
-- **All communications happen using Internal IPs.** This is
+- **All communications happen using Internal IPs.** This is:
   - Highly efficient because all communication happens inside Google Network.
   - Highly secure because it is not accessible from the internet.
   - No charges for data transfer between services.
