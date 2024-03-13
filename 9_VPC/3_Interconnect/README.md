@@ -8,6 +8,8 @@ Google provides three-types of interconnections:
 2. Dedicated Interconnect
 3. Partner Interconnect or Peering
 
+- To create a GCP VPN, VPN Gateway and a tunnel must be created.
+  
 ## Cloud VPN
 - It securely connects your peer network to your Virtual Private Cloud (VPC) network through an **IPsec VPN Tunnel**. Upto 3Gbps.
 - Traffic through **Internet** (public) but it is encrypted using **Internet Key Exchange Protocol**. Latency issue as internet is involved.
