@@ -64,13 +64,14 @@ Create or select a backend service for incoming traffic. You can add multiple ba
 
 ## Cloud DNS
 - Cloud DNS is a high-performance, resilient, global Domain Name System (DNS) service that publishes your domain names to the global DNS in a cost-effective way.
-- Cloud DNS lets you publish your zones and records in DNS without the burden of managing your own DNS servers and software.
+- **Cloud DNS lets you publish your zones and records in DNS without the burden of managing your own DNS servers and software.**
 - Cloud DNS offers both public zones and private managed DNS zones. A public zone is visible to the public internet, while a private zone is visible only from one or more Virtual Private Cloud (VPC) networks that you specify.
 
-- When you create a DNS, two records are automatically created: NS and SOA
+- **When you create a DNS, two records are automatically created: NS and SOA**
 - NS is for keeping track of name servers.
 - SOA is authority record.
-
+  
+### How to Create a DNS
 - First we create a zone either public or private.
 - Then we can choose which record to create once we have created our Domain.
 - If we want to map an ip to this domain, then A record.
