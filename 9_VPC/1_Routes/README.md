@@ -25,3 +25,13 @@ These are system-generated routes that define paths to each subnet in the VPC ne
 
 ### Custom Routes:
 Custom Routes are either static routes that you create manually or dynamic routes that are maintained automatically by one or more of your Cloud Routers.
+
+## Cloud Router
+**Google Cloud Router is a fully managed, software-defined router that enables dynamic routing between your Virtual Private Cloud (VPC) network and other networks. It uses the Border Gateway Protocol (BGP) to advertise and learn IP prefixes.**
+
+### Dynamic Routing with Google Cloud Router 
+- It allows you to automatically configure routes between your VPC network and other networks, based on Border Gateway Protocol (BGP) advertisements. This can simplify your network configuration and make it more flexible and scalable.
+- To use dynamic routing with Google Cloud Router, you must first create a Cloud Router and enable dynamic routing. Once you have done this, you can configure peering connections between your Cloud Router and other BGP routers, such as on-premises routers or routers in other cloud providers’ networks.
+- Once you have configured peering connections, your Cloud Router will start exchanging BGP advertisements with the other routers. This will allow your Cloud Router to learn about the IP prefixes that are available on the other networks. Your Cloud Router will then automatically create routes to these IP prefixes.
+
+[Cloud Router in Detail](https://bgiri-gcloud.medium.com/google-cloud-networking-part-2-0a262b226f9b)
