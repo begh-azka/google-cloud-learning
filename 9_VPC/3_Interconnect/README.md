@@ -8,12 +8,12 @@ Google provides three-types of interconnections:
 2. Dedicated Interconnect
 3. Partner Interconnect or Peering
 
-- To create a GCP VPN, VPN Gateway and a tunnel must be created.
+**To create a GCP VPN, VPN Gateway and a Tunnel must be created.**
   
 ## Cloud VPN
 - It securely connects your peer network to your Virtual Private Cloud (VPC) network through an **IPsec VPN Tunnel**. Upto 3Gbps.
 - Traffic through **Internet** (public) but it is encrypted using **Internet Key Exchange Protocol**. Latency issue as internet is involved.
-- Traffic travelling between two networks is encrypted by one VPN Gateway and then decrypted by the other VPN Gateway.
+- Traffic travelling between two networks is encrypted by one **VPN Gateway** and then decrypted by the other VPN Gateway.
 - This protects your data as it travels over the internet. You can also connect two instances of cloud VPN to each other.
 - Google Cloud offers two types of Cloud VPN Gateway: **HA VPN** and **Classic VPN**
 
@@ -31,8 +31,8 @@ Google provides three-types of interconnections:
 - High speed physical connection between on-premise and VPC networks:
 - This provides high availability and high throughput.
 - Two types of communications possible:
-  1. **Dedicated/Direct Interconnect -** min 10 Gbps.
-  2. **Partner Interconnect -** min 50 Mbps.
+  1. **Dedicated/Direct Interconnect -** min 10 Gbps upto 100 Gbps.
+  2. **Partner Interconnect -** min 50 Mbps to 10 Gbps.
 
 - Data Exchange happens through a private network:
   - Communication using VPC network's internal IP addresses from on-premise network.
@@ -43,9 +43,9 @@ Google provides three-types of interconnections:
 
 ## Direct Peering
 - Connect customer network to google network using network peering.
-- Not a GCP Service.
-- Not recommended. Low level.
-
+- Not recommended. Low level network connection.
+- Traffic Routed using BGP.
+- Does not use GCP objects.
 
 ## Shared VPC
 - **Scenario:** Your organization has multiple projects. You want resources in different projects to talk to each other. How to allow resources in different projects to talk with internal IPs securely and efficiently?
