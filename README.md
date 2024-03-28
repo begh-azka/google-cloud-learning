@@ -10,3 +10,9 @@ To add it to a VM,
 ```
 gcloud compute instances add-metadata VM_NAME --metadata-from-file ssh-keys=KEY_FILE
 ```
+
+For SSH issues:
+```
+gcloud compute ssh vm-name\
+    --troubleshoot
+```
